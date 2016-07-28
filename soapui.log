@@ -1,0 +1,18 @@
+2016-07-24 16:06:13,594 WARN  [SoapUI] Missing folder [C:\workspace\juliano\testes\starwars-script\starwars-script\ext] for external libraries
+2016-07-24 16:06:14,065 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\juliano\soapui-settings.xml]
+2016-07-24 16:06:15,664 INFO  [WsdlProject] Loaded project from [file:/C:/workspace/juliano/testes/starwars-script/starwars-script/soapui/StarWars-Script-soapui-project.xml]
+2016-07-24 16:06:16,266 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [StarWars Script]
+2016-07-24 16:06:16,274 INFO  [SoapUITestCaseRunner] Running TestSuite [TestSuite StarWarsScript], runType = SEQUENTIAL
+2016-07-24 16:06:16,331 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [http://localhost:8080 TestSuite]
+2016-07-24 16:06:16,351 INFO  [SoapUITestCaseRunner] running step [script]
+2016-07-24 16:06:49,930 INFO  [SoapUITestCaseRunner] Assertion [Sucesso] has status VALID
+2016-07-24 16:06:49,934 INFO  [SoapUITestCaseRunner] running step [settings]
+2016-07-24 16:07:40,350 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2016-07-24 16:07:40,353 INFO  [SoapUITestCaseRunner] running step [settings 1]
+2016-07-24 16:07:43,243 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2016-07-24 16:07:43,249 INFO  [SoapUITestCaseRunner] running step [characters]
+2016-07-24 16:07:53,727 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2016-07-24 16:07:53,732 INFO  [SoapUITestCaseRunner] running step [1]
+2016-07-24 16:07:54,781 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2016-07-24 16:07:54,792 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [http://localhost:8080 TestSuite], time taken: 84472ms, status: FINISHED
+2016-07-24 16:07:54,802 INFO  [SoapUITestCaseRunner] TestSuite [TestSuite StarWarsScript] finished with status [FINISHED] in 98512ms
