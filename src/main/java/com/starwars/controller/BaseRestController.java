@@ -1,4 +1,4 @@
-package com.starwars.web.controller;
+package com.starwars.controller;
 
 import javax.transaction.Transactional;
 
@@ -15,44 +15,33 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.starwars.dao.BaseDao;
 import com.starwars.exception.DefaultErrorMessage;
 import com.starwars.exception.ForbiddenMessage;
 import com.starwars.exception.NotFoundMessage;
-import com.starwars.model.Setting;
-import com.starwars.model.Character;
 import com.starwars.service.StarWarsScriptService;
 import com.starwars.util.JSONBasicInfo;
+
+import static com.starwars.util.SWConstants.*;
 
 @RestController
 @Transactional
 public class BaseRestController {
 	@Autowired
 	protected StarWarsScriptService service;
-	@Autowired
-	protected BaseDao<Setting> settingDao;
-	@Autowired
-	protected BaseDao<Character> characterDao;
 	
 	private final Logger logger = LoggerFactory.getLogger(BaseRestController.class);
 
 	@RequestMapping(value = "/script", method = RequestMethod.POST,headers="Accept=application/json")
 	@ResponseBody
-	public ResponseEntity<JSONBasicInfo> upload(Model model,@RequestBody String request) throws Exception {
-		try {
-			logger.info(request);
-			if(settingDao.IsEmpty()){
-				service.saveScript(request);
-				return new ResponseEntity<JSONBasicInfo>(new JSONBasicInfo("Movie script successfully received"),HttpStatus.OK);
-			} else {
-				throw new ForbiddenMessage();
-			}
-		} catch (ForbiddenMessage e) {
+	public ResponseEntity<JSONBasicInfo> upload(Model model,@RequestBody String request) throws DefaultErrorMessage, ForbiddenMessage {
+		logger.info(request);
+		if(service.IsEmpty()){
+			service.saveScript(request);
+			return new ResponseEntity<JSONBasicInfo>(new JSONBasicInfo(MOVIE_SCRIPT_SUCCESS),HttpStatus.OK);
+		} else {
+			ForbiddenMessage e = new ForbiddenMessage();
 			logger.error(e.getMessage(),e);
 			throw e;
-		} catch (Exception e) {
-			logger.error(e.getMessage(),e);
-			throw new DefaultErrorMessage();
 		}
 	}
 	
