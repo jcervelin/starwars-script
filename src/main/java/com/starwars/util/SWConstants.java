@@ -11,7 +11,7 @@ public class SWConstants {
 	public static final String BLANK_LINE_ESCAPE = "\n";
 	public static final String CARRIAGE_RETURN_ESCAPE = "\r";
 	public static final String HIFEN = " - ";
-	public static final String BLANK_SPACE = " - ";
+	public static final String BLANK_SPACE = " ";
 	public static final String MOVIE_SCRIPT_SUCCESS = "Movie script successfully received";
 	public static final String MOVIE_SCRIPT_RECEIVED = "Movie script already received";
 	public static final String UNEXPECTED_ERROR = "Unexpected Error";

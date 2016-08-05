@@ -45,7 +45,7 @@ public class StarWarsScriptService {
 			String[] array = script.split(BLANK_LINE_ESCAPE);
 
 			for (String line : array) {
-				line.replaceAll(CARRIAGE_RETURN_ESCAPE, EMPTY);
+				line = line.replaceAll(CARRIAGE_RETURN_ESCAPE, EMPTY);
 				if (line.startsWith(INT_EXT) || line.startsWith(INT)
 						|| line.startsWith(EXT)) {
 					setting = sWsetting.getSetting(line, mapMovie, setting);

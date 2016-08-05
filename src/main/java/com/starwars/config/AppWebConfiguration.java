@@ -33,7 +33,7 @@ import com.starwars.viewresolver.JsonViewResolver;
 
 @EnableWebMvc
 @ComponentScan(basePackages = { "com.starwars.dao", "com.starwars.service",
-		"com.starwars.web.controller" })
+		"com.starwars.controller" })
 public class AppWebConfiguration extends WebMvcConfigurerAdapter {
 
 	@Override

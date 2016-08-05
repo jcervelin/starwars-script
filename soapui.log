@@ -1,12 +1,18 @@
-2016-08-05 19:20:53,054 WARN  [SoapUI] Missing folder [C:\workspace\juliano\testes\starwars-script\ext] for external libraries
-2016-08-05 19:20:53,429 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\juliano\soapui-settings.xml]
-2016-08-05 19:20:54,832 INFO  [WsdlProject] Loaded project from [file:/C:/workspace/juliano/testes/starwars-script/soapui/StarWars-Script-soapui-project.xml]
-2016-08-05 19:20:55,145 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [StarWars Script]
-2016-08-05 19:20:55,146 INFO  [SoapUITestCaseRunner] Running TestSuite [TestSuite StarWarsScript], runType = SEQUENTIAL
-2016-08-05 19:20:55,173 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [http://localhost:8080 TestSuite]
-2016-08-05 19:20:55,183 INFO  [SoapUITestCaseRunner] running step [script]
-2016-08-05 19:20:55,625 INFO  [SoapUITestCaseRunner] Assertion [Sucesso] has status FAILED
-2016-08-05 19:20:55,625 ERROR [SoapUITestCaseRunner] ASSERTION FAILED -> Missing token [Movie script successfully received] in Response
-2016-08-05 19:20:55,626 ERROR [SoapUITestCaseRunner] script failed, exporting to [C:\workspace\juliano\testes\starwars-script\target\surefire-reports\TestSuite_StarWarsScript-httplocalhost8080_TestSuite-script-0-FAILED.txt]
-2016-08-05 19:20:55,640 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [http://localhost:8080 TestSuite], time taken: 237ms, status: FAILED
-2016-08-05 19:20:55,640 INFO  [SoapUITestCaseRunner] TestSuite [TestSuite StarWarsScript] finished with status [FAILED] in 489ms
+2016-08-05 20:14:45,057 WARN  [SoapUI] Missing folder [C:\Workspaces\Juliano\testes\starwars-script\ext] for external libraries
+2016-08-05 20:14:45,256 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\Juliano\soapui-settings.xml]
+2016-08-05 20:14:46,154 INFO  [WsdlProject] Loaded project from [file:/C:/Workspaces/Juliano/testes/starwars-script/soapui/StarWars-Script-soapui-project.xml]
+2016-08-05 20:14:46,431 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [StarWars Script]
+2016-08-05 20:14:46,432 INFO  [SoapUITestCaseRunner] Running TestSuite [TestSuite StarWarsScript], runType = SEQUENTIAL
+2016-08-05 20:14:46,440 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [http://localhost:8080 TestSuite]
+2016-08-05 20:14:46,459 INFO  [SoapUITestCaseRunner] running step [script]
+2016-08-05 20:14:48,961 INFO  [SoapUITestCaseRunner] Assertion [Sucesso] has status VALID
+2016-08-05 20:14:48,961 INFO  [SoapUITestCaseRunner] running step [settings]
+2016-08-05 20:15:00,425 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2016-08-05 20:15:00,425 INFO  [SoapUITestCaseRunner] running step [settings 1]
+2016-08-05 20:15:00,724 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2016-08-05 20:15:00,724 INFO  [SoapUITestCaseRunner] running step [characters]
+2016-08-05 20:15:02,022 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2016-08-05 20:15:02,022 INFO  [SoapUITestCaseRunner] running step [1]
+2016-08-05 20:15:02,060 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2016-08-05 20:15:02,060 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [http://localhost:8080 TestSuite], time taken: 8182ms, status: FINISHED
+2016-08-05 20:15:02,063 INFO  [SoapUITestCaseRunner] TestSuite [TestSuite StarWarsScript] finished with status [FINISHED] in 15627ms
